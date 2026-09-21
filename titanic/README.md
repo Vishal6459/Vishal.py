@@ -9,7 +9,7 @@ The notebook covers descriptive statistics, missing-value analysis, exploratory 
 ## Files
 
 - `Titanic_Survival_Analysis.ipynb` — Jupyter Notebook containing the complete analysis and classification workflow.
-- `Titanic-Dataset(1).csv` — Titanic dataset used for the analysis.
+- `Titanic-Dataset.csv` — Titanic dataset used for the analysis.
 
 ## Dataset
 
@@ -78,7 +78,7 @@ The notebook includes model evaluation, comparison tables, confusion matrices, c
 ## How to Run
 
 1. Open `Titanic_Survival_Analysis.ipynb` in Jupyter Notebook, JupyterLab, Google Colab, or VS Code.
-2. Keep `Titanic-Dataset(1).csv` in the same folder as the notebook.
+2. Keep `Titanic-Dataset.csv` in the same folder as the notebook.
 3. Run the notebook cells from top to bottom.
 
 ## Project Structure
@@ -87,5 +87,5 @@ The notebook includes model evaluation, comparison tables, confusion matrices, c
 titanic/
 ├── README.md
 ├── Titanic_Survival_Analysis.ipynb
-└── Titanic-Dataset(1).csv
+└── Titanic-Dataset.csv
 ```
