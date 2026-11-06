@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+from pathlib import Path
 
 # 1. Page Configuration
 st.set_page_config(
@@ -11,16 +12,19 @@ st.set_page_config(
 )
 
 # 2. Load Trained Pipeline (Preprocessor + Gradient Boosting Model)
+
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "ckd_best_model.joblib"
+
 @st.cache_resource
 def load_model_pipeline():
     try:
-        return joblib.load('ckd_best_model.joblib')
+        return joblib.load(MODEL_PATH)
     except Exception as e:
         st.error(f"Error loading model pipeline: {e}")
         return None
 
 pipeline = load_model_pipeline()
-
 # 3. App Title & Description
 st.title("🩺 Chronic Kidney Disease (CKD) Decision Support System")
 st.markdown("""
